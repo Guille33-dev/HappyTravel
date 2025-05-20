@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track & Travel - Viajes para Amantes de Automóviles</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="caja nav-caja">
+
+            <a href="#" class="logo">
+                <span class="logo-icono"> Track<span>&Travel</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#contactos"class="botonContacto">Contacto</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    
+
+    <header class="principal" >
+        <div class="caja">
+            <div class="principal-contenido">
+                <h1>Viajes únicos para amantes del automovilismo</h1>
+                <p>Descubre destinos legendarios, eventos exclusivos y experiencias inolvidables relacionadas con el mundo de los coches clásicos, deportivos y de competición.</p>
+                <div class="botones">
+                    <a href="#" class="boton-principal">Descubrir destinos</a>
+                    <a href="#" class="boton-secundario">Ver eventos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="caracteristicas">
+        <div class="caja">
+            <div class="encabezado2">
+                <h2>Por qué viajar con nosotros</h2>
+                <p>En Track&Travel nos especializamos en crear experiencias únicas para los amantes del mundo del motor.</p>
+            </div>
+            <div class="caracteristicas-column">
+                <div class="caracteristica-card">
+                    <div class="caracteristica-icono">🏎️</div>
+                    <h3>Eventos Exclusivos</h3>
+                    <p>Acceso VIP a las carreras más importantes del mundo, incluidos F1, WRC, Le Mans y eventos de coches clásicos.</p>
+                </div>
+                <div class="caracteristica-card">
+                    <div class="caracteristica-icono">🛣️</div>
+                    <h3>Rutas Legendarias</h3>
+                    <p>Recorre las carreteras más emblemáticas y los circuitos más míticos conduciendo coches de ensueño.</p>
+                </div>
+                <div class="caracteristica-card">
+                    <div class="caracteristica-icono">🚘</div>
+                    <h3>Experiencias Personalizadas</h3>
+                    <p>Adaptamos cada viaje según tus preferencias: coleccionismo, competición, historia o pura pasión por los motores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="destinos">
+        <div class="caja">
+            <div class="encabezado2">
+                <h2 id="destinos">Destinos destacados</h2>
+                <p>Explora nuestras experiencias más populares para los apasionados del automovilismo.</p>
+            </div>
+            <div class="destino-grid">
+                <div class="destino-card">
+                    <div class="destino-img">  
+                        <video src="./img/MONACO.mp4" width="690" height="360" autoplay loop muted preload="auto"></video>  
+                    </div>
+                    
+                    <div class="destino-content">
+                        <h3>Mónaco Grand Prix</h3>
+                        <p>Vive la experiencia completa del circuito urbano más icónico del mundo con acceso exclusivo.</p>
+                        <span class="destino-precio">Desde 3.500€</span>
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="destino-card">
+                    <div class="destino-img" style="background-image: url('./img/museoFerrari.jpg');"></div>
+                    <div class="destino-content">
+                        <h3>Ruta de los Clásicos Italianos</h3>
+                        <p>Visita las fábricas de Ferrari, Lamborghini y Maserati, con recorrido por museos exclusivos.</p>
+                        <span class="destino-precio">Desde 2.800€</span>
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="destino-card">
+                    <div class="destino-img">
+                        <video src="./img/evento.mp4" width="690" height="360" autoplay loop muted preload="auto"></video>
+                    </div>
+
+                    <div class="destino-content">
+                        <h3>Goodwood Festival of Speed</h3>
+                        <p>Paquete VIP para asistir al evento de automovilismo clásico más importante de Inglaterra.</p>
+                        <span class="destino-precio">Desde 2.200€</span>
+                        <a href="#" class="boton">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<section class="contacto">
+    <div class="caja">
+        <div class="seccion-header">
+            <h2 id="contactos">Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o quieres más información? Estamos aquí para ayudarte.</p>
+        </div>
+        <form class="contacto-form">
+            <div class="form-grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" nombre="nombre" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-grupo">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" nombre="email" required placeholder="ejemplo@correo.com">
+            </div>
+            <div class="form-grupo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" nombre="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <boton type="submit" class="boton-principal">Enviar mensaje</boton>
+        </form>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="caja">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Track & Travel</h3>
+                    <p>Especialistas en viajes para entusiastas del automovilismo desde 2010, 
+                        creando experiencias memorables para los amantes de los coches.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Experiencias</a></li>
+                        <li><a href="#contactos">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Experiencias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Circuitos de F1</a></li>
+                        <li><a href="#">Museos y fábricas</a></li>
+                        <li><a href="#">Rally y off-road</a></li>
+                        <li><a href="#">Coches clásicos</a></li>
+                        <li><a href="#">Track days</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" aria-label="Facebook"> <img alt="Imagen Facebook" src="./img/fbk.png"></a>
+                        <a href="https://www.instagram.com/" aria-label="Instagram"><img alt="Imagen Instagram" src="./img/ig.png"></a>
+                        <a href="https://x.com/" aria-label="Twitter"><img alt="Imagen Twitter" src="./img/X.png"></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><img alt="Imagen YouTube" src="./img/youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Track & Travel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
