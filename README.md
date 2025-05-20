@@ -13,7 +13,7 @@
 **Track & Travel** es una página web desarrollada como proyecto final para la asignatura de Digitalización durante el tercer trimestre del primer curso del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web.  
 El objetivo principal es poner en práctica los conocimientos adquiridos sobre estructura web y diseño visual mediante HTML5 y CSS3, logrando una experiencia coherente, moderna y atractiva para el usuario.
 
-El sitio simula una agencia de viajes premium. El proyecto incluye la creación de un encabezado con navegación, una sección de presentación principal, cards de planes personalizados, formulario de contacto y pie de página. También se ha trabajado el diseño responsive con `@media` para su adaptación a distintos dispositivos.
+El sitio simula una agencia de viajes premium. El proyecto incluye la creación de un encabezado con navegación, una sección de presentación principal, cards de planes personalizados, formulario de contacto y pie de página. También se ha trabajado el diseño responsive para su adaptación a distintos dispositivos.
 
 La web fue prototipada inicialmente en Figma. Las imágenes están alojadas en local (pueden subirse a Cloudinary si se desea). Se utilizó Git Bash para el control de versiones y GitHub como plataforma de despliegue y copia en la nube del proyecto.
 
