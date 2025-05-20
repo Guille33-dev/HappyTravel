@@ -1,4 +1,489 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    color: #1a1a1a;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.caja {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #212121a1;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.logo-icono {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.nav-links li a:hover {
+    color: #cccccc;
+    transition: color 0.3s;
+}
+
+.nav-links li a::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.botonContacto {
+    background-color: #E10600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botonContacto:hover {
+    background-color: #c10500;
+    transform: translateY(-2px);
+}
+
+
+.principal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.zonamovilidad.es/fotos/editor/37432/1735730074_aston-martin-valkyrie-salon-prive-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding: 180px 0 120px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.principal-contenido {
+    max-width: 650px;
+}
+
+.principal h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.principal p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+.boton-principal {
+    background-color: #E10600;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.boton-principal:hover {
+    background-color: #c10500;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.boton-secundario:hover {
+    background-color: white;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.caracteristicas {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.encabezado2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.encabezado2 h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.encabezado2 p {
+    font-size: 1.1rem;
+    color: #888888;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.caracteristicas-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.caracteristica-card {
+    background-color: #f5f5f5;
+    border-radius: 0;
+    padding: 40px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.caracteristica-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.caracteristica-icono {
+    font-size: 3rem;
+    color: #E10600;
+    margin-bottom: 20px;
+}
+
+.caracteristica-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.caracteristica-card p {
+    color: #888888;
+}
+
+.destinos {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.destino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destino-card {
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.destino-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.destino-img {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.destino-im.video {
+    max-width: 100%;
+    height: auto;
+}
+
+.destino-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.destino-content {
+    padding: 30px;
+}
+
+.destino-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.destino-card p {
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.destino-precio {
+    font-weight: 700;
+    color: #E10600;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: #E10600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.boton:hover {
+    background-color: #c10500;
+    transform: translateY(-2px);
+}
+
+
+
+.contacto {
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.contacto .seccion-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #cccccc;
+}
+
+.form-grupo {
+    margin-bottom: 25px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #f5f5f5;
+    font-size: 1rem;
+    border-radius: 0;
+    background-color: #d6d6d6;
+    transition: border 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: #E10600;
+    outline: none;
+}
+
+.contacto-form .boton-principal {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.footer-column p {
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}
+
+.footer-links li {
+    margin-left: 50px;
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #E10600;
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
